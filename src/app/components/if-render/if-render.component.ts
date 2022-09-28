@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IfRenderComponent implements OnInit {
   CanShow:boolean = true;
+  name= 'rener';
 
 
   constructor() { }
