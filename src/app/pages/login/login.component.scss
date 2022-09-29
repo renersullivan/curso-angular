@@ -1,7 +1,7 @@
 .container{
 
     width: 100%;
-    height: auto;
+    height: 850px;
     z-index: 1;
     background-color: #820AD1;
     background-size: cover;
@@ -18,6 +18,7 @@
 .nu-box{
     z-index: 2;
     width: 92%;
+    height: 600px;
     max-width: 28rem;
     left: 0;
     right: 0;
@@ -43,30 +44,49 @@
     position: absolute;
     top: 0;
 }
-.nu-box .form.content{
+.nu-box .form-content{
     position: relative;
     overflow: hidden;
-    height: 28rem;
+    height: 18rem;
 }
+.form-content{
+    display: flex;
+    justify-content: center;
+}
+
 form{
     display: flex;
     flex-direction: column;
-    height: 500px;
-    padding: 15px;
+    height: 240px;
+    padding: 2px 2px 26px;
+
 
 }
 input{
  display: flex;
  border: none;
  border-bottom-style: dotted;
+ border-width:0 0 1px;
  font-size: 14pt;
+ margin: 8px 0;
+ outline: 0;
 }
-#nome,#senha{
+label{
+    margin:16px;
+}
+#cpf,#senha{
     color: #404040;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
     border-color: #a0a0a0;
     text-shadow: none;
-    width: 70%;
+    width: 100%;
+    margin: 8px 0;
     
+}
+.link-senha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
