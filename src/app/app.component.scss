@@ -1,0 +1,20 @@
+.global{
+border:1px solid red;
+
+}
+nav{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: silver;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.conteudo-geral{
+    border:1px solid black;
+}
+     

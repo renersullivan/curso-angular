@@ -10,12 +10,15 @@ import { ParentDataComponent } from './components/parent-data/parent-data.compon
 import { DirectivesComponent } from './components/directives/directives.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EventoComponent } from './components/evento/evento.component';
-import { HomeComponent } from './pages/nubank/home/home.component';
+
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipersComponent } from './components/pipers/pipers.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { LoginComponent } from './pages/login/login.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,12 +28,13 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     DirectivesComponent,
     IfRenderComponent,
     EventoComponent,
-    HomeComponent,
+    LoginComponent,
     EmitterComponent,
     ChangeNumberComponent,
     ListRenderComponent,
     PipersComponent,
     TwoWayBindingComponent,
+
    
 
 

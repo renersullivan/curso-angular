@@ -1,0 +1,72 @@
+.container{
+
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    background-color: #820AD1;
+    background-size: cover;
+}
+.logo-nubank svg{
+
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    max-height: 5rem;
+    max-width: 5rem;
+    transition: all 1s;
+}
+.nu-box{
+    z-index: 2;
+    width: 92%;
+    max-width: 28rem;
+    left: 0;
+    right: 0;
+    margin: 1rem auto 0;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
+} 
+.text-login{
+    padding: 1px;
+}
+.text-login p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    padding: 52px;
+}
+.form.content{
+    padding: 1rem 4rem 0;
+    width: 100%;
+    transition: all 250ms ease;
+    position: absolute;
+    top: 0;
+}
+.nu-box .form.content{
+    position: relative;
+    overflow: hidden;
+    height: 28rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 15px;
+
+}
+input{
+ display: flex;
+ border: none;
+ border-bottom-style: dotted;
+ font-size: 14pt;
+}
+#nome,#senha{
+    color: #404040;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border-color: #a0a0a0;
+    text-shadow: none;
+    width: 70%;
+    
+}
