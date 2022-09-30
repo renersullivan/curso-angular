@@ -1,0 +1,18 @@
+.btn-enviar {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: 1px solid #4CAF50;
+  }
+  .btn-enviar:hover{
+    transition: all 0.2s;
+    background-color: white;
+    color: #4CAF50;
+  }
