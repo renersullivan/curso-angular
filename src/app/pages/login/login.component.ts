@@ -1,4 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { GenerecService } from 'src/app/services/generec.service';
+import { ListService } from 'src/app/services/list.service';
 
 @Component({
   selector: 'app-login',
@@ -6,11 +9,23 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  constructor() {}
+  constructor(private generecService: GenerecService) {}
+
   public cpf: string = '';
+  public senha: string = '';
   ngOnInit() {}
 
   public detectCpf(event: any): void {
     this.cpf = event.value;
+  }
+
+  public detectSenha(event: any): void {
+    this.senha = event.value;
+  }
+
+  public chamaServicoParaLogar(): void {}
+
+  public chamarServico(): Observable => {
+   console.log(resultado) 
   }
 }

@@ -4,7 +4,10 @@
         {"id":2,"name":"tom","type":"cat","age":10},
         {"id":3,"name":"frida","type":"dog","age":5},
         {"id":4,"name":"bob","type":"horse", "age":1}
-    ]
+    ],
+    "loginSucesso":
+        {"id":1,"name":"turca","auth":true}
+    
 
     
 }

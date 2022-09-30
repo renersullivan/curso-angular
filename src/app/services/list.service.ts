@@ -18,4 +18,9 @@ export class ListService {
   getAll(): Observable<Animal[]> {
     return this.httpClient.get<Animal[]>('http://localhost:3000/animalList');
   }
+
+  fazerLoginNoBack(cpf: string, senha: string): Observable<any> {
+    console.log(`enviando cpf ${cpf} e senha ${senha} pro back`);
+    return this.httpClient.get<any>('http://localhost:3000/loginSucesso');
+  }
 }

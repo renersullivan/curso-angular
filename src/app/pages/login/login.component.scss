@@ -16,16 +16,18 @@
     transition: all 1s;
 }
 .nu-box{
-    z-index: 2;
     width: 92%;
     height: 600px;
     max-width: 28rem;
-    left: 0;
-    right: 0;
     margin: 1rem auto 0;
     background-color: #fff;
     border-radius: 0.5rem;
     box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 } 
 .text-login{
     padding: 1px;
@@ -45,9 +47,7 @@
     top: 0;
 }
 .nu-box .form-content{
-    position: relative;
     overflow: hidden;
-    height: 18rem;
 }
 .form-content{
     display: flex;
@@ -57,7 +57,6 @@
 form{
     display: flex;
     flex-direction: column;
-    height: 240px;
     padding: 2px 2px 26px;
 
 
@@ -75,6 +74,7 @@ label{
     margin:16px;
 }
 #cpf,#senha{
+    
     color: #404040;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
@@ -84,16 +84,10 @@ label{
     margin: 8px 0;
     
 }
-.sibmit-login{
-    background-color: rgba(255,255,255,0);
-    border-color: #820AD1;
-    color: #820AD1;
-    margin-top: 2.5rem;
-    width: 100%;
-    font-size: .8rem;
-    font-weight: 500;
-    line-height: 2rem;
-    display: block;
+.btn-enviar:hover{
+   transition: all 0.2s;
+   background-color: #820AD1;
+   color: white;
 }
 .link-senha{
     display: flex;
@@ -101,3 +95,31 @@ label{
     justify-content: center;
     align-items: center;
 }
+.link-senha a{
+    display: flex;
+    text-decoration: none;
+    color: #820AD1;
+    outline: 0;
+}
+
+
+.btn-enviar{
+    transition: all 0.2s;
+    border:1px solid #820AD1;
+    color: #820AD1;
+    width: 50%;
+    height:70px;
+    line-height: 70px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0;
+    margin-bottom:20px ;
+}
+
+.btn-continua{
+    transition: all 0.2s;
+    opacity: 1;
+    margin-top: 10px;
+}
+ 

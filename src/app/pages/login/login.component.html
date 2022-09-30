@@ -17,14 +17,15 @@
                 <input type="text" name="cpf" value="" (input)="detectCpf($event.target)" />
 
                 <label for="senha">Senha</label>
-                <input type='password' id='senha' name='senha' required>
+                <input type='password' id='senha' name='senha' (input)="detectSenha($event.target)"  required>
             </form>
 
         </div>
 
-        <div *ngIf="cpf !== '' " class="sibmit-login">
-            Enviar
+        <div (click)="chamaServicoParaLogar()" [ngClass]="cpf !== ''? 'btn-continua': 'btn-normal' " class="btn-enviar">
+          Continuar
         </div>
+        <div (click)="chamarServico()"  [ngClass]="cpf !== ''? 'btn-continua': 'btn-normal' " class="btn-enviar">servicos</div>
 
 
         <div class="link-senha">
@@ -33,4 +34,7 @@
         </div>
 
     </div>
+    <footer>
+        <p>Copor</p>
+    </footer>
 </div>
