@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { GenerecService } from 'src/app/services/generec.service';
 import { ListService } from 'src/app/services/list.service';
 
@@ -11,6 +10,7 @@ import { ListService } from 'src/app/services/list.service';
 export class LoginComponent implements OnInit {
   constructor(private generecService: GenerecService) {}
 
+  public resultado: any = '';
   public cpf: string = '';
   public senha: string = '';
   ngOnInit() {}
@@ -25,7 +25,9 @@ export class LoginComponent implements OnInit {
 
   public chamaServicoParaLogar(): void {}
 
-  public chamarServico(): Observable => {
-   console.log(resultado) 
+  public chamarServico(): void {
+    this.generecService.serviceAuth().subscribe((result) => {
+      this.resultado = result;
+    });
   }
 }
