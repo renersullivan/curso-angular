@@ -7,11 +7,13 @@ import { CharacterComponent } from './pages/character/character.component';
 import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
+  { path: '', component: FirstComponentComponent },
   { path: 'first', component: FirstComponentComponent },
   { path: 'list', component: ListRenderComponent },
   { path: 'emitter', component: EmitterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'character', component: CharacterComponent },
+  //{ path: '**', component: PageNotFoundComponent },//
 ];
 
 @NgModule({
