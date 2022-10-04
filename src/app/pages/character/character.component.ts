@@ -8,6 +8,7 @@ import { GenerecService } from 'src/app/services/generec.service';
 })
 export class CharacterComponent implements OnInit {
   public resultado: any = '';
+personagem: any;
   constructor(private generecService: GenerecService) {}
 
   ngOnInit(): void {}

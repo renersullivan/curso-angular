@@ -1,13 +1,21 @@
+
 <div class="container-geral">
+   
     <div class="box-characters">
-        <div (click)="characterId()" class="btn-enviar">buscar
-            
+        
             <li *ngFor="let personagem of resultado.results">
-                {{personagem.name}},{{personagem.id}}
-                <img [src]="personagem.image" />
+                <div class="image">
+                    <img [src]="personagem.image" />
+            </div>
+                <div class="text-info">
+                       <h1>{{personagem.name}}</h1>
+                        <p>{{personagem.id}}</p>
+                    </div>
+
             </li>
-               
-        </div>
+         
+        <div (click)="characterId()" class="btn-enviar">buscar </div>
+
 
     </div>
 
