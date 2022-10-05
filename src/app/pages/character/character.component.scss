@@ -1,27 +1,7 @@
-.btn-enviar {
-	background-color: #4caf50; /* Green */
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	transition: all 0.2s;
-	cursor: pointer;
-	border: 1px solid #4caf50;
-}
-.btn-enviar:hover {
-	transition: all 0.2s;
-	background-color: white;
-	color: #4caf50;
-}
-
 .container-geral {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 1px solid black;
 	background: rgb(32, 35, 41);
 }
 .box-menu {
@@ -30,8 +10,11 @@
 	display: flex;
 	justify-content: space-between;
 }
-.menu-image {
+.menu-image svg {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
 }
 .menu-links {
 	display: flex;
@@ -42,16 +25,30 @@
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 15px;
+	align-items: center;
 }
 .p-text {
 	display: flex;
 	font-weight: 800;
 	margin-right: 10px;
 }
+.p-text:hover {
+	color: #ff9800;
+}
 .btn-support {
 	display: flex;
 	align-items: center;
 	margin-right: 10px;
+	border: #ff9800 1px solid;
+	border-radius: 10px;
+	height: 35px;
+	width: 100px;
+	justify-content: center;
+}
+.btn-support:hover {
+	border: 1px solid transparent;
+	background: rgb(255, 152, 0) none repeat scroll 0% 0%;
+	color: rgb(255, 255, 255);
 }
 .text-top {
 	background-color: white;
@@ -67,6 +64,9 @@
 	justify-content: center;
 	font-weight: 800;
 	padding: 50px 0px;
+	z-index: 2;
+	position: relative;
+	opacity: 0.8;
 }
 .rick-logo {
 	display: flex;
@@ -80,18 +80,19 @@
 	opacity: 0.4;
 	position: absolute;
 	left: auto;
-	top: -31px;
+	top: -298px;
 	z-index: 1;
+	opacity: 0.1;
 }
 .box-characters {
 	background: rgb(60, 62, 68);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	border: 1px solid green;
 	width: -moz-available;
 	max-width: 800px;
 	border-radius: 15px;
+	margin-bottom: 15px;
 }
 
 .text-info {
@@ -99,7 +100,39 @@
 	padding: 15px;
 	flex-direction: column;
 }
-
+.text-info h1 {
+	color: white;
+}
+.text-info h1:hover {
+	color: #ff9800;
+}
+.text-info h2 {
+	color: white;
+}
+.text-info h2:hover {
+	color: #ff9800;
+}
+.text-info a {
+	text-decoration: none;
+	color: white;
+}
+.text-info a:hover {
+	color: #ff9800;
+}
+.text-info p {
+	text-decoration: none;
+	color: white;
+}
+.text-info p:hover {
+	color: #ff9800;
+}
+.text-info h3 {
+	text-decoration: none;
+	color: white;
+}
+.text-info h3:hover {
+	color: #ff9800;
+}
 .image img {
 	display: flex;
 	border-radius: 10px 0 0 10px;
