@@ -24,6 +24,47 @@
 	border: 1px solid black;
 	background: rgb(32, 35, 41);
 }
+.box-menu {
+	background-color: white;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.menu-image {
+	display: flex;
+}
+.menu-links {
+	display: flex;
+	flex-direction: row;
+}
+.links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 15px;
+}
+.p-text {
+	display: flex;
+	font-weight: 800;
+	margin-right: 10px;
+}
+.btn-support {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+.text-top {
+	background-color: white;
+	width: 100%;
+	padding: 50px 0 0 0px;
+}
+.text-top h1 {
+	display: flex;
+	text-align: center;
+	font-size: 108px;
+	justify-content: center;
+	font-weight: 800;
+}
 .box-characters {
 	background: rgb(60, 62, 68);
 	display: flex;
