@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   public chamaServicoParaLogar(): void {}
 
   public chamarServico(): void {
-    this.generecService.serviceAuth().subscribe((result) => {
+    this.generecService.buscarTodosPersonagens().subscribe((result) => {
       this.resultado = result;
     });
   }

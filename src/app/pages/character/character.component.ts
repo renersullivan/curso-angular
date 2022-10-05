@@ -11,10 +11,12 @@ export class CharacterComponent implements OnInit {
 personagem: any;
   constructor(private generecService: GenerecService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.characterId()
+  }
 
   public characterId(): void {
-    this.generecService.serviceAuth().subscribe((dados) => {
+    this.generecService.buscarTodosPersonagens().subscribe((dados) => {
       this.resultado = dados;
     });
   }
