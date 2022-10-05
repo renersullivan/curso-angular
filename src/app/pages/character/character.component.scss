@@ -137,3 +137,16 @@
 	display: flex;
 	border-radius: 10px 0 0 10px;
 }
+@media (min-width: 768px) {
+	.container-characters {
+		display: flex;
+		flex-wrap: wrap;
+
+		.box-characters {
+			flex: 40%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+			/*demo*/
+			box-shadow: 0 0 0 1px black;
+			margin: 10px;
+		}
+	}
+}

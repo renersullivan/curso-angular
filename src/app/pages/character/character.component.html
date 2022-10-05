@@ -39,18 +39,20 @@
 			</svg>
 		</div>
 	</div>
-	<div class="box-characters" *ngFor="let personagem of resultado.results">
-		<div class="image">
-			<img [src]="personagem.image" />
-		</div>
-		<div class="text-info">
-			<h1>{{ personagem.name }}</h1>
-			<h3>Alive :</h3>
-			<p>{{ personagem.status }} - {{ personagem.species }}</p>
-			<h2>Last known location:</h2>
-			<p>{{ personagem.location.name }}</p>
-			<h2>First seen in:</h2>
-			<a href="{{ personagem.origin.url }}"> {{ personagem.origin.name }}</a>
+	<div class="container-characters">
+		<div class="box-characters" *ngFor="let personagem of resultado.results">
+			<div class="image">
+				<img [src]="personagem.image" />
+			</div>
+			<div class="text-info">
+				<h1>{{ personagem.name }}</h1>
+				<h3>Alive :</h3>
+				<p>{{ personagem.status }} - {{ personagem.species }}</p>
+				<h2>Last known location:</h2>
+				<p>{{ personagem.location.name }}</p>
+				<h2>First seen in:</h2>
+				<a href="{{ personagem.origin.url }}"> {{ personagem.origin.name }}</a>
+			</div>
 		</div>
 	</div>
 </div>
