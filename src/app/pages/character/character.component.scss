@@ -56,7 +56,9 @@
 .text-top {
 	background-color: white;
 	width: 100%;
-	padding: 50px 0 0 0px;
+	margin-bottom: 60px;
+	position: relative;
+	z-index: 0;
 }
 .text-top h1 {
 	display: flex;
@@ -64,6 +66,22 @@
 	font-size: 108px;
 	justify-content: center;
 	font-weight: 800;
+	padding: 50px 0px;
+}
+.rick-logo {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+}
+.rick-logo svg {
+	display: flex;
+	align-items: center;
+	opacity: 0.4;
+	position: absolute;
+	left: auto;
+	top: -31px;
+	z-index: 1;
 }
 .box-characters {
 	background: rgb(60, 62, 68);
