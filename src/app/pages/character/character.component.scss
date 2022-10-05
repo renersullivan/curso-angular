@@ -15,6 +15,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
+	cursor: pointer;
 }
 .menu-links {
 	display: flex;
@@ -26,11 +27,20 @@
 	justify-content: space-between;
 	padding: 15px;
 	align-items: center;
+	cursor: pointer;
 }
 .p-text {
 	display: flex;
 	font-weight: 800;
 	margin-right: 10px;
+}
+.links a {
+	display: flex;
+	text-decoration: none;
+	color: black;
+}
+.links a:hover {
+	color: #ff9800;
 }
 .p-text:hover {
 	color: #ff9800;
@@ -102,19 +112,20 @@
 }
 .text-info h1 {
 	color: white;
+	cursor: pointer;
 }
 .text-info h1:hover {
 	color: #ff9800;
 }
 .text-info h2 {
 	color: white;
+	cursor: pointer;
 }
-.text-info h2:hover {
-	color: #ff9800;
-}
+
 .text-info a {
 	text-decoration: none;
 	color: white;
+	cursor: pointer;
 }
 .text-info a:hover {
 	color: #ff9800;
@@ -122,6 +133,7 @@
 .text-info p {
 	text-decoration: none;
 	color: white;
+	cursor: pointer;
 }
 .text-info p:hover {
 	color: #ff9800;
@@ -130,12 +142,11 @@
 	text-decoration: none;
 	color: white;
 }
-.text-info h3:hover {
-	color: #ff9800;
-}
+
 .image img {
 	display: flex;
 	border-radius: 10px 0 0 10px;
+	cursor: pointer;
 }
 @media (min-width: 768px) {
 	.container-characters {
@@ -143,8 +154,7 @@
 		flex-wrap: wrap;
 
 		.box-characters {
-			flex: 40%; /* or - flex: 0 50% - or - flex-basis: 50% - */
-			/*demo*/
+			flex: 40%;
 			box-shadow: 0 0 0 1px black;
 			margin: 10px;
 		}
