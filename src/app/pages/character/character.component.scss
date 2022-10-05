@@ -1,44 +1,47 @@
 .btn-enviar {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition: all 0.2s;
-    cursor: pointer;
-    border: 1px solid #4CAF50;
+	background-color: #4caf50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition: all 0.2s;
+	cursor: pointer;
+	border: 1px solid #4caf50;
 }
-.btn-enviar:hover{
-    transition: all 0.2s;
-    background-color: white;
-    color: #4CAF50;
+.btn-enviar:hover {
+	transition: all 0.2s;
+	background-color: white;
+	color: #4caf50;
 }
 
-.container-geral{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  max-width: 800px;
-  background: rgb(32, 35, 41);
+.container-geral {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid black;
+	background: rgb(32, 35, 41);
 }
-.box-characters li{
-  background: rgb(60, 62, 68);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid green;
- 
-
-}  
-  
-.text-info{
-display: flex;
+.box-characters {
+	background: rgb(60, 62, 68);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 1px solid green;
+	width: -moz-available;
+	max-width: 800px;
+	border-radius: 15px;
 }
-.image{
-  display: flex;
 
+.text-info {
+	display: flex;
+	padding: 15px;
+	flex-direction: column;
+}
+
+.image img {
+	display: flex;
+	border-radius: 10px 0 0 10px;
 }

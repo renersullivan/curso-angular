@@ -3,15 +3,15 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root',
+	providedIn: 'root',
 })
 export class GenerecService {
-  constructor(private httpClient: HttpClient) {}
+	constructor(private httpClient: HttpClient) {}
 
-  
-  private url_character: string = 'https://rickandmortyapi.com/api/character/';
+	private auth: string = 'chegou no service';
+	private url_character: string = 'https://rickandmortyapi.com/api/character/';
 
-  public buscarTodosPersonagens(): Observable<any> {
-    return this.httpClient.get(this.url_character);
-  }
+	public buscarTodosPersonagens(): Observable<any> {
+		return this.httpClient.get(this.url_character);
+	}
 }
