@@ -52,7 +52,7 @@
 	border: #ff9800 1px solid;
 	border-radius: 10px;
 	height: 35px;
-	width: 100px;
+	width: 120px;
 	justify-content: center;
 }
 .btn-support:hover {
@@ -60,6 +60,7 @@
 	background: rgb(255, 152, 0) none repeat scroll 0% 0%;
 	color: rgb(255, 255, 255);
 }
+
 .text-top {
 	background-color: white;
 	width: 100%;
@@ -113,6 +114,7 @@
 .text-info h1 {
 	color: white;
 	cursor: pointer;
+	margin-bottom: 10px;
 }
 .text-info h1:hover {
 	color: #ff9800;
@@ -120,12 +122,14 @@
 .text-info h2 {
 	color: white;
 	cursor: pointer;
+	margin-bottom: 10px;
 }
 
 .text-info a {
 	text-decoration: none;
 	color: white;
 	cursor: pointer;
+	margin-bottom: 10px;
 }
 .text-info a:hover {
 	color: #ff9800;
