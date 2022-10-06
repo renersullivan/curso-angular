@@ -133,21 +133,19 @@
 
 .text-info a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	cursor: pointer;
 	margin-bottom: 10px;
 }
 .text-info a:hover {
-	color: white;
+	color: #ff9800;
 }
 .text-info p {
 	text-decoration: none;
 	color: white;
 	cursor: pointer;
 }
-.text-info p:hover {
-	color: #ff9800;
-}
+
 .text-info h3 {
 	text-decoration: none;
 	color: white;
